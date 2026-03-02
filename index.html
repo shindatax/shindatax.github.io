@@ -3,12 +3,10 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Data Analyst — NZ Portfolio</title>
+<title>Data Analyst, NZ Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
 <style>
-/* Fallback fonts if Google Fonts blocked */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap');
 :root {
   --bg:       #080B10;
   --surface:  #0E1219;
@@ -23,9 +21,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
-
 body {
   background: var(--bg);
   color: var(--text);
@@ -35,7 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NOISE OVERLAY ── */
 body::before {
   content: '';
   position: fixed; inset: 0;
@@ -43,7 +38,6 @@ body::before {
   pointer-events: none; z-index: 0; opacity: .5;
 }
 
-/* ── GRID BG ── */
 body::after {
   content: '';
   position: fixed; inset: 0;
@@ -55,7 +49,6 @@ body::after {
   pointer-events: none; z-index: 0;
 }
 
-/* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 100;
@@ -66,7 +59,7 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800; font-size: 1rem;
   color: var(--white); letter-spacing: .06em;
 }
@@ -80,7 +73,6 @@ nav {
 }
 .nav-links a:hover { color: var(--accent); }
 
-/* ── HERO ── */
 .hero {
   position: relative; z-index: 1;
   min-height: 100vh;
@@ -89,51 +81,39 @@ nav {
   padding: 8rem 3rem 4rem;
   max-width: 1100px; margin: 0 auto;
 }
-
 .hero-eyebrow {
   font-family: 'DM Mono', monospace;
   font-size: .8rem; color: var(--accent);
   letter-spacing: .18em; text-transform: uppercase;
   margin-bottom: 1.5rem;
-  
 }
 .hero-eyebrow::before { content: '//  '; color: var(--muted); }
-
 .hero-name {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
-  font-size: clamp(3.5rem, 8vw, 7rem);
-  line-height: .95;
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  line-height: 1.2;
   color: var(--white);
   margin-bottom: .6rem;
-  
 }
 .hero-name .line2 {
   color: transparent;
   -webkit-text-stroke: 1.5px var(--muted);
 }
-
 .hero-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   font-weight: 600;
   color: var(--accent2);
   letter-spacing: .04em;
   margin-bottom: 1.8rem;
-  
 }
-
 .hero-desc {
   max-width: 520px;
   font-size: 1rem; color: var(--text);
   margin-bottom: 2.8rem;
-  
 }
-
-.hero-cta {
-  display: flex; gap: 1rem; flex-wrap: wrap;
-  
-}
+.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 .btn {
   padding: .75rem 1.8rem;
   font-family: 'DM Mono', monospace;
@@ -141,28 +121,20 @@ nav {
   text-decoration: none; border-radius: 2px;
   transition: all .2s; display: inline-flex; align-items: center; gap: .5rem;
 }
-.btn-primary {
-  background: var(--accent); color: #fff;
-  border: 1px solid var(--accent);
-}
+.btn-primary { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
 .btn-primary:hover { background: transparent; color: var(--accent); }
-.btn-ghost {
-  background: transparent; color: var(--text);
-  border: 1px solid var(--border);
-}
+.btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
 .btn-ghost:hover { border-color: var(--accent2); color: var(--accent2); }
 
-/* ── STATS ROW ── */
 .stats {
   display: flex; gap: 3rem; flex-wrap: wrap;
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border);
-  
 }
 .stat-item { text-align: left; }
 .stat-num {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800; font-size: 2rem;
   color: var(--white);
 }
@@ -174,7 +146,6 @@ nav {
   margin-top: .1rem;
 }
 
-/* ── SECTION WRAPPER ── */
 section {
   position: relative; z-index: 1;
   max-width: 1100px; margin: 0 auto;
@@ -190,13 +161,12 @@ section {
 .section-label.s2::before { content: '02  '; }
 .section-label.s3::before { content: '03  '; }
 .section-heading {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800; font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800; font-size: clamp(1.6rem, 2.8vw, 2.4rem);
   color: var(--white); line-height: 1.1;
   margin-bottom: 3rem;
 }
 
-/* ── SKILLS GRID ── */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -210,11 +180,9 @@ section {
   transition: background .2s;
 }
 .skill-card:hover { background: #111520; }
-.skill-icon {
-  font-size: 1.6rem; margin-bottom: .8rem;
-}
+.skill-icon { font-size: 1.6rem; margin-bottom: .8rem; }
 .skill-name {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700; font-size: 1rem;
   color: var(--white); margin-bottom: .4rem;
 }
@@ -224,12 +192,11 @@ section {
   font-size: .7rem; padding: .2rem .6rem;
   border-radius: 2px; letter-spacing: .04em;
 }
-.tag-blue  { background: rgba(79,142,247,.12); color: var(--accent); border: 1px solid rgba(79,142,247,.25); }
+.tag-blue  { background: rgba(79,142,247,.12); color: var(--accent);  border: 1px solid rgba(79,142,247,.25); }
 .tag-green { background: rgba(79,247,168,.12); color: var(--accent2); border: 1px solid rgba(79,247,168,.25); }
-.tag-warn  { background: rgba(247,201,79,.12); color: var(--warn); border: 1px solid rgba(247,201,79,.25); }
-.tag-red   { background: rgba(247,120,79,.12); color: var(--red); border: 1px solid rgba(247,120,79,.25); }
+.tag-warn  { background: rgba(247,201,79,.12); color: var(--warn);    border: 1px solid rgba(247,201,79,.25); }
+.tag-red   { background: rgba(247,120,79,.12); color: var(--red);     border: 1px solid rgba(247,120,79,.25); }
 
-/* ── PROJECT CARD ── */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
@@ -259,7 +226,7 @@ section {
   letter-spacing: .12em; margin-bottom: 1rem;
 }
 .project-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700; font-size: 1.3rem;
   color: var(--white); margin-bottom: .6rem;
 }
@@ -279,7 +246,7 @@ section {
 }
 .metric { text-align: left; }
 .metric-val {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700; font-size: 1.1rem;
   color: var(--accent);
 }
@@ -300,7 +267,6 @@ section {
 }
 .project-link:hover { gap: .7rem; }
 
-/* ── CONTACT ── */
 .contact-box {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -309,16 +275,13 @@ section {
   gap: 2rem; flex-wrap: wrap;
 }
 .contact-text h3 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800; font-size: 2rem;
   color: var(--white); margin-bottom: .5rem;
 }
-.contact-text p {
-  font-size: .95rem; color: var(--text); max-width: 420px;
-}
+.contact-text p { font-size: .95rem; color: var(--text); max-width: 420px; }
 .contact-links { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-/* ── FOOTER ── */
 footer {
   position: relative; z-index: 1;
   text-align: center;
@@ -329,27 +292,10 @@ footer {
   letter-spacing: .08em;
 }
 
-/* ── FLOATING ACCENT ── */
-.glow {
-  position: fixed; border-radius: 50%;
-  filter: blur(120px); pointer-events: none;
-  z-index: 0; opacity: .12;
-}
-.glow-1 { width: 600px; height: 600px; background: var(--accent); top: -200px; right: -200px; }
+.glow { position: fixed; border-radius: 50%; filter: blur(120px); pointer-events: none; z-index: 0; opacity: .12; }
+.glow-1 { width: 600px; height: 600px; background: var(--accent);  top: -200px; right: -200px; }
 .glow-2 { width: 400px; height: 400px; background: var(--accent2); bottom: 20%; left: -150px; }
 
-/* ── ANIMATIONS ── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-.reveal {
-  opacity: 1;
-  transform: none;
-}
-
-/* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 2px; }
@@ -380,7 +326,7 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  <p class="hero-eyebrow">Data Analyst — Auckland, New Zealand</p>
+  <p class="hero-eyebrow">Data Analyst, Auckland, New Zealand</p>
   <h1 class="hero-name">
     SHINYEONG<br>
     <span class="line2">KIM</span>
@@ -388,8 +334,8 @@ footer {
   <p class="hero-title">Operational Risk · Logistics Analytics · Supply Chain</p>
   <p class="hero-desc">
     I turn operational data into decisions that reduce cost and risk.
-    Focused on NZ logistics, freight, and supply chain analytics —
-    helping teams move from reactive to predictive.
+    Focused on NZ logistics, freight, and supply chain analytics.
+    I help teams move from reactive to predictive.
   </p>
   <div class="hero-cta">
     <a href="#projects" class="btn btn-primary">View Projects →</a>
@@ -403,7 +349,7 @@ footer {
     </div>
     <div class="stat-item">
       <div class="stat-num">0.72<span>+</span></div>
-      <div class="stat-label">AUC — Delay prediction</div>
+      <div class="stat-label">AUC, Delay prediction</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">5<span>K</span></div>
@@ -419,8 +365,8 @@ footer {
 <!-- SKILLS -->
 <section id="skills">
   <p class="section-label">Skills</p>
-  <h2 class="section-heading reveal">What I work with</h2>
-  <div class="skills-grid reveal">
+  <h2 class="section-heading">What I work with</h2>
+  <div class="skills-grid">
     <div class="skill-card">
       <div class="skill-icon">🐍</div>
       <div class="skill-name">Data Analysis</div>
@@ -465,19 +411,19 @@ footer {
 <!-- PROJECTS -->
 <section id="projects">
   <p class="section-label s2">Projects</p>
-  <h2 class="section-heading reveal">Selected work</h2>
+  <h2 class="section-heading">Selected work</h2>
   <div class="projects-grid">
 
-    <!-- PROJECT 1 — MAIN -->
-    <div class="project-card reveal">
-      <div class="project-num">PROJECT  01  —  FEATURED</div>
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <div class="project-num">PROJECT  01  ·  FEATURED</div>
       <div class="project-title">Shipping Delay & Cost Impact Analysis</div>
       <div class="project-subtitle">NZ Logistics · Predictive ML · Operational Risk</div>
       <p class="project-desc">
-        Built an end-to-end ML pipeline to predict delivery delays across NZ freight routes
-        (Port of Auckland, Air NZ Cargo) and quantify financial impact.
+        Built an end-to-end ML pipeline to predict delivery delays across NZ freight routes,
+        sea freight, air cargo, and road, and quantify their financial impact.
         Gradient Boosting model identifies high-risk shipments before dispatch,
-        enabling proactive intervention.
+        enabling proactive intervention with the highest ROI.
       </p>
       <div class="project-metrics">
         <div class="metric">
@@ -504,26 +450,28 @@ footer {
       </div>
     </div>
 
-    <!-- PROJECT 2 — PLACEHOLDER -->
-    <div class="project-card reveal">
-      <div class="project-num">PROJECT  02  —  COMING SOON</div>
-      <div class="project-title">Port Congestion Dashboard</div>
-      <div class="project-subtitle">NZ Ports · Time Series · Forecasting</div>
+    <!-- PROJECT 2 — COMING SOON -->
+    <div class="project-card">
+      <div class="project-num">PROJECT  02  ·  COMING SOON</div>
+      <div class="project-title">NZ FMCG Demand Planning & Inventory Optimisation</div>
+      <div class="project-subtitle">Supply Chain · SQL · Demand Forecasting · Inventory Policy</div>
       <p class="project-desc">
-        Time series analysis of Port of Auckland container throughput data,
-        forecasting weekly congestion levels and optimising vessel scheduling windows.
+        Store–DC–Supplier 3-tier supply chain decision project. Demand forecasting,
+        inventory policy design (Safety Stock, Reorder Point), and stockout risk
+        quantification. Built on MySQL and Python to mirror real operational workflows.
       </p>
       <div class="project-metrics">
         <div class="metric">
-          <div class="metric-val">—</div>
+          <div class="metric-val">TBC</div>
           <div class="metric-label">In progress</div>
         </div>
       </div>
       <div class="project-footer">
         <div class="skill-tags">
           <span class="tag tag-blue">Python</span>
-          <span class="tag tag-green">Prophet</span>
-          <span class="tag tag-warn">Tableau</span>
+          <span class="tag tag-blue">MySQL</span>
+          <span class="tag tag-green">scikit-learn</span>
+          <span class="tag tag-warn">Matplotlib</span>
         </div>
         <span class="project-link" style="color:var(--muted); cursor:default;">Coming soon</span>
       </div>
@@ -535,16 +483,16 @@ footer {
 <!-- CONTACT -->
 <section id="contact">
   <p class="section-label s3">Contact</p>
-  <div class="contact-box reveal">
+  <div class="contact-box">
     <div class="contact-text">
       <h3>Let's talk data.</h3>
       <p>
         Open to data analyst roles in NZ logistics, supply chain,
-        and operations. Based in Auckland — available immediately.
+        and operations. Based in Auckland, available immediately.
       </p>
     </div>
     <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#3b62746e697b7e767a727715787476" class="btn btn-primary">Email me →</a>
+      <a href="/cdn-cgi/l/email-protection#5821372d2a183d35393134763b3735" class="btn btn-primary">Email me →</a>
       <a href="https://www.linkedin.com/in/shinyeong-kim-49b16b361" class="btn btn-ghost" target="_blank">LinkedIn</a>
       <a href="https://github.com/shindatax" class="btn btn-ghost" target="_blank">GitHub</a>
     </div>
@@ -556,8 +504,15 @@ footer {
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Scroll reveal
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
+  entries.forEach((e) => {
     if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), 
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.project-card, .skill-card, .contact-box').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transfo
