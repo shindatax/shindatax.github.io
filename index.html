@@ -477,9 +477,6 @@ footer {
       </div>
     </div>
 
-  </div>
-</section>
-
     <!-- PROJECT 3 -->
     <div class="project-card">
       <div class="project-num">PROJECT  03  ·  R / TIDYMODELS</div>
@@ -516,7 +513,10 @@ footer {
            class="project-link" target="_blank">View Analysis →</a>
       </div>
     </div>
-  
+
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <p class="section-label s3">Contact</p>
@@ -529,7 +529,7 @@ footer {
       </p>
     </div>
     <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#5821372d2a183d35393134763b3735" class="btn btn-primary">Email me →</a>
+      <a href="mailto:shin.datax@gmail.com" class="btn btn-primary">Email me →</a>
       <a href="https://www.linkedin.com/in/shinyeong-kim-49b16b361" class="btn btn-ghost" target="_blank">LinkedIn</a>
       <a href="https://github.com/shindatax" class="btn btn-ghost" target="_blank">GitHub</a>
     </div>
@@ -540,7 +540,7 @@ footer {
   <p>Built with GitHub Pages · Shinyeong Kim · Auckland, NZ</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
     if (e.isIntersecting) {
@@ -552,4 +552,10 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.project-card, .skill-card, .contact-box').forEach(el => {
   el.style.opacity = '0';
-  el.style.transfo
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity .5s ease, transform .5s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
